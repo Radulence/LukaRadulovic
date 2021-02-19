@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  
+  canvas {
+    display: block;
+    vertical-align: bottom;
+    background-color: black;
+  }
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+  }
+
+  div.header{
+      top: 200px;
+      position: absolute;
+      font-family: 'Reggae One', cursive;
+      font-size: 3.5em;
+      left: 15px;
+      background-color: rgba(53, 50, 50, 0.138);
+  }
+  body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(192, 45, 45);
+    display: flex;
+    
+}
+
+.nav-list{
+list-style-type: none;
+display: flex;
+padding: 0;
+}
+
+.nav-link{
+position: relative;
+text-decoration: none;
+color: white;
+font-size: 20px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+letter-spacing: 3px;
+padding: 15px 30px;
+margin: 0px 18px;
+transition: color 0.3s ease-in-out;
+padding-top: 50px;
+}
+
+.nav-link::before{
+z-index: -1;  /* so that it can't hide the nav-links text */
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left:0;
+width: 0;
+background-image: linear-gradient(to right,#a1c4fd,#c2e9fb);
+transition: width 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before{
+width: 100%;
+}
+
+.nav-link:hover{
+color: rgb(158, 41, 41);
+
+}
+
+.word {
+    perspective: 1000px;
+}
+
+.word span {
+	cursor: pointer;
+	display: inline-block;
+	user-select: none;
+	line-height: .8;
+}
+
+.word span.active {
+	animation: falling 2s ease-out;
+	transform-origin: bottom center;
+}
+
+@keyframes falling {
+	12% {
+		transform: rotateX(240deg);
+	}
+	
+	24% {
+		transform: rotateX(150deg);
+	}
+	
+	36% {
+		transform: rotateX(200deg);
+	}
+	
+	48% {
+		transform: rotateX(175deg);
+	}
+	
+	60%, 85% {
+		transform: rotateX(180deg);
+	}
+	
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
+.skecra {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    top: 0;
+    padding-left: 10px;
+}
+
+.fade-in {
+    animation: fadeIn ease 9999990s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 1110s;
+    -o-animation: fadeIn ease 1110s;
+    -ms-animation: fadeIn ease 1110s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    1% {opacity: 0;}
+    2% {opacity: 0;}
+    5% {opacity: 0;}
+    6% {opacity: 0;}
+    7% {opacity: 0;}
+    10% {opacity: 0;}
+    15%{opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    35% {opacity: 0;}
+    45% {opacity: 0;}
+    47% {opacity: 0.01;}
+    49% {opacity: 0.03;}
+    50% {opacity: 0.05;}
+    60%{opacity: 0.07;}
+    62% {opacity: 0.09;}
+    65% {opacity: 0.1;}
+    70% {opacity: 0.2;}
+    75% {opacity: 0.3;}
+    85% {opacity: 0.4;}
+    90% {opacity: 0.5;}
+    95% {opacity: 0.7;}
+    97% {opacity: 0.8;}
+    99% {opacity: 0.9;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    1% {opacity: 0;}
+    2% {opacity: 0;}
+    5% {opacity: 0;}
+    6% {opacity: 0;}
+    7% {opacity: 0;}
+    10% {opacity: 0;}
+    15%{opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    35% {opacity: 0;}
+    45% {opacity: 0;}
+    50% {opacity: 0.05;}
+    60%{opacity: 0.09;}
+    65% {opacity: 0.1;}
+    70% {opacity: 0.2;}
+    75% {opacity: 0.3;}
+    85% {opacity: 0.4;}
+    90% {opacity: 0.5;}
+    95% {opacity: 0.7;}
+    97% {opacity: 0.8;}
+    99% {opacity: 0.9;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    1% {opacity: 0;}
+    2% {opacity: 0;}
+    5% {opacity: 0;}
+    6% {opacity: 0;}
+    7% {opacity: 0;}
+    10% {opacity: 0;}
+    15%{opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    35% {opacity: 0;}
+    45% {opacity: 0;}
+    50% {opacity: 0.05;}
+    60%{opacity: 0.09;}
+    65% {opacity: 0.1;}
+    70% {opacity: 0.2;}
+    75% {opacity: 0.3;}
+    85% {opacity: 0.4;}
+    90% {opacity: 0.5;}
+    95% {opacity: 0.7;}
+    97% {opacity: 0.8;}
+    99% {opacity: 0.9;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  } 
+
+  @media only screen and (max-width: 600px) {
+
+    div .header {
+        top: 230px;
+    }
+
+.div {
+    font-size: 20px;
+}
+
+.div2{
+    font-size: 30px;
+}
+
+  }
